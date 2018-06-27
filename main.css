@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+li {
+  font-family: 'Shrikhand', cursive;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background-overlay {
+  background: url("http://gapyearsite.wpengine.com/wp-content/uploads/2017/11/articles/13_03_13-Roskildeoutsidecrowd-press-vjp.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 10vh 10vh 20vh 20vh 20vh;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-areas:
+  "header header header header"
+  "nav nav nav nav"
+  "main main main main"
+  "main main main main"
+  "main main main main";
+  background: #36aad8de;
+}
+
+/*HEADER*/
+.header {
+  grid-area: header;
+  background: #32b72abd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.banner-contain {
+  display: inline-block;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.social-links {
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.social-links i {
+  padding: 5px;
+  font-size: 25px;
+}
+
+/*NAV*/
+.nav {
+  grid-area: nav;
+  background: #4370dabf;
+  min-height: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FCB07E;
+  text-shadow: 3px 3px 3px black;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+.active {
+  color: #ec108b;;
+}
+
+.show {
+  display: block !important;
+}
+
+/*MAIN CONTENT*/
+.content {
+  grid-area: main;
+  overflow: scroll;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+}
+
+.content-section p {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+#prices table {
+      padding-top: 2vw;
+}
+
+.content-section tr,
+.content-section td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.content-section table {
+  width: 100%;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+form {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  padding-top: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn input {
+  background: #32b72a;
+  border-style: none;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  padding: 2vw;
+  box-shadow: 2px 2px 3px #585858;
+  margin-bottom: 3vw;
+}
+
+.image-container {
+  width: 90%;
+  margin: auto;
+}
+
+.image-container img {
+  background-size: cover;
+}
+
+/*Overflow Scrollbar*/
+.content-section::-webkit-scrollbar {
+	width: 0px;
+	background-color: transparent;
+}
+
+@media screen and (max-width: 699px) {
+  .grid-container {
+    grid-template-rows: 10vh 5vh 25vh 25vh 25vh;
+    grid-template-columns: 22vw 22vw 22vw 22vw;
+  }
+
+  .banner-contain h1 {
+    font-size: 6vw;
+  }
+
+  nav ul {
+    height: 5vh;
+  }
+
+  nav li {
+    font-size: 25px;
+  }
+
+  .content-section h1 {
+    font-size: 25px;
+    padding: 3vw;
+  }
+
+  .content-section img {
+    width: 100%;
+  }
+
+  .content-section p {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .content-section table {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  fieldset {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .ticket-select {
+    margin-top: 10px;
+  }
+
+  .image-container {
+
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 30vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .grid-container {
+    grid-template-rows: 10vh 7vh 25vh 25vh 25vh;
+    grid-template-columns: 22vw 22vw 22vw 22vw;
+  }
+
+  .banner-contain h1 {
+    font-size: 35px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 32px;
+  }
+
+  .social-links i {
+    font-size: 35px;
+  }
+
+  .content-section h1 {
+    font-size: 40px;
+    padding: 3vw;
+  }
+
+  .content-section img {
+    width: 70%;
+    float: right;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+
+  .content-section p {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content-section table {
+    font-size: 25px;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  fieldset {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .ticket-select {
+    margin-top: 10px;
+  }
+
+  .btn input {
+    font-size: 15px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 30vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+}
+
+@media screen and (min-width: 1079px) {
+  .banner-contain h1 {
+    font-size: 40px;
+  }
+
+  .social-links i {
+    font-size: 30px;
+  }
+
+  .content-section h1 {
+    font-size: 45px;
+    padding: 1vw;
+  }
+
+  .content-section img {
+    width: 60%;
+    float: right;
+  }
+
+  .content-section p {
+    font-size: 25px;
+  }
+
+  .content-section table {
+    font-size: 25px;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  fieldset {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .ticket-select {
+    margin-top: 10px;
+  }
+
+  .btn input {
+    font-size: 20px;
+    padding: 1.5vw;
+  }
+
+  .image-container img {
+    width: 48%;
+    float: left;
+    margin: auto;
+  }
+
+}

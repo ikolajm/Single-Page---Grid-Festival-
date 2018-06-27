@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--JQ-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Shrikhand" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>Single Page Festival</title>
+  </head>
+
+  <body>
+    <div class="background-overlay">
+      <div class="grid-container">
+        <header class="header">
+          <div class="banner-contain">
+            <h1>#FESTIVAL2018</h1>
+          </div>
+          <div class="social-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </header>
+        <nav class="nav">
+          <ul>
+            <li id="nAbout" class="active">About</li>
+            <li id="nPrices">Prices</li>
+            <li id="nGallery">Gallery</li>
+          </ul>
+        </nav>
+        <div class="content">
+          <div id="about" class="content-section show">
+            <h1>About #FESTIVAL2018</h1>
+            <img src="https://imgix.bustle.com/elite-daily/2015/04/06034314/elite-daily-music-festival-800x400.jpg?w=998&h=598&fit=crop&crop=faces&auto=format&q=70" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dolor vitae velit vestibulum, et dignissim turpis vulputate. Integer aliquam nunc gravida aliquet ullamcorper. Duis mollis magna orci, quis mollis justo tempus ac. Donec fringilla ac mi ut imperdiet. Vestibulum tempor aliquam ornare. Duis rutrum urna sed diam pellentesque viverra. Phasellus quis vestibulum eros. Maecenas rutrum malesuada erat at cursus. Suspendisse sodales consectetur nulla quis feugiat.</p>
+          </div>
+          <div id="prices" class="content-section">
+            <table>
+              <th>
+                Ticket
+              </th>
+              <th>
+                Price
+              </th>
+              <tr>
+                <td>
+                  General Admission
+                </td>
+                <td>
+                  $20.00
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  VIP Seating
+                </td>
+                <td>
+                  $50.00
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  All Access (Meet the bands!)
+                </td>
+                <td>
+                  $100.00
+                </td>
+              </tr>
+            </table>
+            <div class="order">
+              <form>
+                <fieldset class="personal">
+                  <legend>Personal information:</legend>
+                  First name:<br>
+                  <input type="text" name="firstname"><br>
+                  Last name:<br>
+                  <input type="text" name="lastname"><br><br>
+                </fieldset>
+                <fieldset class="ticket-select">
+                  <legend>Order Details:</legend>
+                  <select name="tickets">
+                    <option value="general" selected>General Admission</option>
+                    <option value="vip">VIP</option>
+                    <option value="allaccess">All Access</option>
+                  </select>
+                  <legend>Quanity:</legend>
+                  <input type="number" name="quantity" min="1" max="10" value="1">
+                </fieldset>
+              </form>
+              <div class="btn">
+                <input type="submit" value="Proceed to checkout!" />
+              </div>
+            </div>
+          </div>
+          <div id="gallery" class="content-section">
+            <div class="image-container">
+              <img src="https://cdn1.i-scmp.com/sites/default/files/styles/980x551/public/images/methode/2018/02/28/487ee7b2-1b71-11e8-804d-87987865af94_1280x720_140856.jpg?itok=Uj6dp1LL" />
+              <img src="https://icdn5.digitaltrends.com/image/firefly2016_0617_193005-9456_dlg-copy-1500x1000.jpg" />
+              <img src="http://customerfaithful.com/wp-content/uploads/2015/07/pemberton-music-festival-evening.jpg" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VwsG4PynqkMO-DxZIgXEcAlPKOYg-eauyUBeQraceKxgr9n2RQ" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfDmiX3YEUvDRR2Oj0M_mZtwKWnfroTjY2315o3Ct2fuFcYg_SQ" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6RghKqmzhJww62iDKhry3_yil46sC2GV1x9Fun80KnY8mpuH-" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIEJaghYERMcs8wSmMXiurPsGgD4FAP-knJ4Q2oXbNhGVFmH6j1A" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrRsLkTDr4P6J7lAd1qgFlTA0-Vw9sxBNM3K8VDoZziWskRhbOyQ" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIPNRLSrANPwMSSrRKNCETeCAB-4z9R1Z8Rk22vRatD71TZj1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js" type="text/javascript"></script>
+</html>
